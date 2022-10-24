@@ -16,10 +16,13 @@ function userInterface() {
         const newBook = document.createElement('div');
         newBook.classList.add('new-book');
         const text = document.createElement('p');
-        text.textContent = `${data.title} By ${data.author}`;
+        text.textContent = `${data.title}`;
+        const text2 = document.createElement('p');
+        text2.textContent = ` ${data.author}`;
         const removebtn = document.createElement('button');
         removebtn.textContent = 'Remove';
         removebtn.addEventListener('click', removeBook.bind(index));
+        newBook.appendChild(text2);
         newBook.appendChild(text);
         newBook.appendChild(removebtn);
         addBook.appendChild(newBook);
