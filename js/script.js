@@ -13,17 +13,23 @@ let books;
 function userInterface() {
     addBook.innerHTML = '';
     books.forEach((data, index) => {
-        const newBook =document.createElement('div');
+        const newBook = document.createElement('div');
         newBook.classList.add('new-book');
-        const text =document.createElement('p');
+        const text = document.createElement('p');
         text.textContent = `${data.title} By ${data.author}`;
         const removebtn = document.createElement('button');
         removebtn.textContent = 'Remove';
-        removebtn.addEventListener('click', removebtn.bind(index));
+        removebtn.addEventListener('click', removeBook.bind(index));
         newBook.appendChild(text);
         newBook.appendChild(removebtn);
         addBook.appendChild(newBook);
     });
+}
+
+function removeBook() {
+    books.splice(this, 1);
+    saveBooks(books);
+    displayBook();
 }
 
 function displayBook() {
@@ -49,4 +55,4 @@ btn.addEventListener('click', (e) => {
         title.value = '';
         author.value = '';
     } 
-})
+});
