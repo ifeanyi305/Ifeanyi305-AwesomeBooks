@@ -35,3 +35,18 @@ displayBook ();
 function saveBooks(book) {
     localStorage.setItem('bookInfo', JSON.stringify(book));
 }
+
+btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (title.value && author.value) {
+        const bookObject = {
+            title: title.value,
+            author: author.value,
+        }
+        books.push(bookObject);
+        saveBooks(books);
+        displayBook();
+        title.value = '';
+        author.value = '';
+    } 
+})
