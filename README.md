@@ -1,56 +1,66 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Awesome Book
 
-> Description the project.
+>  its an Awesome book that stores, books and their author
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- html
+- css
+- javascript
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://ifeanyi305.github.io/Ifeanyi305-AwesomeBooks/)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running, follow these simple example steps.
 
 ### Prerequisites
+Before attempting to get a copy of this, you should know(have) how to do the following:
+
+- How to use the command line interface(CLI)
+
+- Know how to navigate directories or folders at the CLI.
+
+- Know how to get the URL(https/ssh) of a repository on GitHub.
+
+- You should have a code editor installed, preferably VsCode.
 
 ### Setup
 
-### Install
+- In desired folder or directory in the CLI, run the command:
 
-### Usage
+>                   git clone (https/ssh)URL
 
-### Run tests
+-Navigate into the cloned folder or repository by running the command:
 
-### Deployment
+>                   cd <folder/name of the repository>
 
+- If VsCode is your default code editor, run:
+
+>                   code .
+
+- You are all setup!
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Ifeanyi305**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/ifeanyi305)
+- Twitter: [@twitterhandle](https://twitter.com/otiifeanyi2020)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/ifeanyioti)
 
-👤 **Author2**
+👤 **krisbobo**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [krisbobo](https://github.com/krisbobo)
+- Twitter: [ChrisboboSys](https://twitter.com/ChrisboboSys)
+- LinkedIn: [kiyong-christian](https://linkedin.com/in/kiyong-christian)
 
 ## 🤝 Contributing
 
@@ -72,4 +82,3 @@ Give a ⭐️ if you like this project!
 
 This project is [MIT](./LICENSE) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._

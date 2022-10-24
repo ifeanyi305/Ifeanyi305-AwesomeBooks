@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awesome Books</title>
     <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section>
         <div class="main-container">
-            <header>
-                <h1>Awesome books</h1>
-            </header>
-            <div id="books-title">
-               
+            <h1>Awesome books</h1>
+            <div id="book-collection">              
             </div>
         </div>
-    </section>
-    <form action="">
-        <input type="text" name="text" id="title" placeholder="Title">
-        <input type="text" name="Author" id="Author" placeholder="Author">
-    </form>
-    <button>Add</button>
+        <div>
+            <form class="book-input">
+                <input type="text" name="text" id="title" placeholder="Title"><br>
+                <input type="text" name="Author" id="author" placeholder="Author"><br>
+                <button type="submit" id="add-button">Add Book</button>
+            </form>
+        </div>
+    </section>  
 </body>
 </html>
