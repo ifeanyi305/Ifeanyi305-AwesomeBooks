@@ -7,6 +7,8 @@ class Book {
   }
 }
 
+// Validating form
+
 // ====== Handle local Storage =====
 
 class Store {
@@ -32,11 +34,9 @@ class page {
   static bookList(books) {
     const list = document.getElementById('book-collection');
     const create = document.createElement('div');
+    create.className = 'list-control';
     create.innerHTML = `
-    <tr>
-    <th>${books.title}</th>
-    <th>${books.author}</th>
-    </tr>
+    <p>${books.title} by ${books.author}</p>
       <button class="remove-btn">Remove</button>
     `;
     list.appendChild(create);
@@ -58,13 +58,15 @@ document.addEventListener('DOMContentLoaded', page.awesomeBooks);
 
 document.querySelector('#add-button').addEventListener('click', (e) => {
   e.preventDefault();
+  const bookTitle = this.title;
+  const bookAuthor = this.author;
+  if (bookTitle.value && bookAuthor.value) {
+    const title = document.getElementById('title').value;
+    const author = document.getElementById('author').value;
 
-  const title = document.getElementById('title').value;
-  const author = document.getElementById('author').value;
-
-  const books = new Book(title, author);
-  page.bookList(books);
-
+    const books = new Book(title, author);
+    page.bookList(books);
+  }
   // to clear fields
   page.clearFields();
 

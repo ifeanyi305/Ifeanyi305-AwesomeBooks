@@ -36,6 +36,7 @@ form h4 {
 
 form input {
   padding: 5px 10px;
+  width: 100%;
   text-align: start;
   margin-bottom: 10px;
   border: 1px solid grey;
@@ -43,8 +44,23 @@ form input {
 
 #add-button {
   padding: 5px;
-  margin-left: 73%;
+  float: right;
 }
 
+#book-collection {
+  border: 2px solid gray;
+  border-radius: 5px;
+}
 
+.list-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px;
+}
 
+.remove-btn {
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+}
