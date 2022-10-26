@@ -4,19 +4,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
   text-decoration: none;
   list-style: none;
+  font-style: oblique;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body {
   height: 100%;
   width: 100%;
+  background-image: url(images/pexels-photo-3747499.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
 header {
   display: flex;
   align-items: center;
+  top: 0;
   justify-content: space-between;
   background: grey;
   color: white;
@@ -24,9 +29,16 @@ header {
   height: 50px;
 }
 
-header span {
+span {
   padding-left: 30px;
-  line-height: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#year {
+  color: rgb(27, 161, 27);
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .nav-links {
@@ -34,6 +46,11 @@ header span {
   padding: 0;
   margin: 0;
   padding-left: 8px;
+}
+
+a {
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .tab a {
@@ -46,9 +63,18 @@ header span {
   display: none;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
   border-radius: 5px;
   margin: 20% auto;
+}
+
+.centers {
+  text-align: center;
+}
+
+.descriptions {
+  color: white;
+  font-size: 18px;
+  padding: 10px;
 }
 
 #new-book {
@@ -79,28 +105,41 @@ h1 {
   padding-top: 50px;
 }
 
+.description {
+  color: white;
+  font-size: 35px;
+  padding: 10px;
+  font-weight: bold;
+}
+
 footer h2 {
   color: white;
 }
 
-.book-input h2 {
-  margin-bottom: 10px;
-  color: grey;
-  font-size: 18px;
-  text-align: center;
-}
-
 form input {
-  padding: 5px 10px;
+  padding: 16px;
   width: 100%;
   text-align: start;
   margin-bottom: 10px;
-  border: 1px solid grey;
+  border-radius: 7px;
+  border: 1px solid black;
 }
 
 #add-button {
-  padding: 5px;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.5s;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: white;
+  border: none;
   float: right;
+}
+
+#add-button:hover {
+  background-color: burlywood;
+  color: white;
 }
 
 .form-control {
@@ -114,16 +153,28 @@ form input {
 
 .list-control {
   display: flex;
+  background-color: antiquewhite;
+  margin-bottom: 3px;
+  border-radius: 6px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 4px;
+  padding: 9px;
 }
 
 .remove-btn {
   padding: 5px;
   border: none;
+  background-color: red;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: 0.5s;
+  color: white;
   border-radius: 4px;
+}
+
+.remove-btn:hover {
+  opacity: 1;
 }
 
 h3 {

@@ -36,7 +36,7 @@ class page {
     const create = document.createElement('div');
     create.className = 'list-control';
     create.innerHTML = `
-    <p>${books.title} by ${books.author}</p>
+    <p>${books.title} <b>By</b> ${books.author}</p>
       <button class="remove-btn">Remove</button>
     `;
     list.appendChild(create);
