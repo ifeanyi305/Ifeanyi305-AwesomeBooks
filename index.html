@@ -9,20 +9,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
-        <header>
-            <span>Awesome Books</span>
-            <nav>
-                <ul class="nav-links">
-                    <li class="tab is-active"><a href="">List</a></li>
-                    <li class="tab"><a href="">Add new</a></li>
-                    <li class="tab"><a href="">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-    </section>
-    <h1>All awesome books</h1>
-    <section>
+
+    <header>
+        <span>Awesome Books</span>
+        <nav>
+            <ul class="nav-links">
+                <li class="tab"><a href="#book-library">List</a></li>
+                <li class="tab"><a href="#new-book">Add new</a></li>
+                <li class="tab"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="book-library">
+        <h1>All awesome books</h1>
         <div class="main-container">
             <div id="book-collection">
                 <thead>
@@ -36,10 +36,11 @@
             </div>
         </div>
     </section>
-    <section>
+
+    <section id="new-book">
         <div>
             <form class="book-input">
-                <h4 class="description">Add a new book</h4>
+                <h2 class="description">Add a new book</h2>
                 <input type="text" name="text" id="title" placeholder="Title" required>
                 <br>
                 <br>
@@ -49,11 +50,12 @@
                 <button type="submit" id="add-button">Add</button>
             </form>
         </div>
-    </section>  
-    <section>
+    </section> 
+
+    <section id="contact">
         <div>
             <h3>Contact Information</h3>
-            <p>do you have any question or yoou just wanna say hi you can reach out to me via:</p>
+            <p>You can reach out to me via:</p>
             <ul>
                 <li>My Email address: otijoseph305@gmail.com</li>
                 <li>My Phone number: 07067255308</li><br>
@@ -61,5 +63,9 @@
             </ul>
         </div>
     </section>
+
+    <footer>
+        <h2>&copy; Copyright Awesome Book Publishers</h2>
+    </footer>
 </body>
 </html>
