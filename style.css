@@ -21,9 +21,6 @@ body {
 header {
   display: flex;
   align-items: center;
-  top: 0;
-  width: 100%;
-  position: fixed;
   justify-content: space-between;
   background: grey;
   color: white;
