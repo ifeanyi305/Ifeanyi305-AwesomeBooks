@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  text-decoration: none;
 }
 
 body {
@@ -12,10 +13,24 @@ body {
   width: 100%;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.nav-links li {
+  display: inline;
+  padding: 0px 5px;
+  list-style: none;
+}
+
 section {
   width: 100%;
   margin: 60px auto;
-  max-width: 200px;
+  max-width: 350px;
   border-radius: 5px;
 }
 
@@ -36,7 +51,8 @@ form h4 {
 
 form input {
   padding: 5px 10px;
-  width: 100%;
+  width: 50%;
+  margin-left: 25%;
   text-align: start;
   margin-bottom: 10px;
   border: 1px solid grey;
@@ -44,7 +60,7 @@ form input {
 
 #add-button {
   padding: 5px;
-  float: right;
+  margin-left: 65%;
 }
 
 #book-collection {
@@ -54,6 +70,7 @@ form input {
 
 .list-control {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 4px;
