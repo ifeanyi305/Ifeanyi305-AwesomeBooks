@@ -6,11 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awesome Books</title>
     <script src="./js/script.js" defer></script>
+    <script src="./js/navigation.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>All awesome books</h1>
-    <section>
+
+    <header>
+        <span>Awesome Books</span>
+        <nav>
+            <ul class="nav-links">
+                <li class="tab"><a href="#book-library" class="list">List</a></li>
+                <li class="tab"><a href="#new-book" class="add">Add new</a></li>
+                <li class="tab"><a href="#contact" class="contact-me">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="date">
+     <p id="year"></p>
+    </div>
+    <section id="book-library">
+        <h1 class="book-header">All awesome books</h1>
         <div class="main-container">
             <div id="book-collection">
                 <thead>
@@ -23,9 +38,11 @@
                 <tbody id="booklist"></tbody>            
             </div>
         </div>
-        <div>
+    </section>
+
+    <section id="new-book">
             <form class="book-input">
-                <h4 class="description">Add a new book</h4>
+                <h2 class="description">Add a new book</h2>
                 <input type="text" name="text" id="title" placeholder="Title" required>
                 <br>
                 <br>
@@ -34,7 +51,22 @@
                 <br>
                 <button type="submit" id="add-button">Add</button>
             </form>
+    </section> 
+
+    <section id="contact">
+        <div>
+            <h3>Contact Information</h3>
+            <p>You can reach out to me via:</p>
+            <ul>
+                <li>My Email address: otijoseph305@gmail.com</li>
+                <li>My Phone number: 07067255308</li>
+                <li>My street: No13 nwosu street aba, Nigeria.</li>
+            </ul>
         </div>
-    </section>  
+    </section>
+
+    <footer>
+        <h2>&copy; Copyright Awesome Book Publishers</h2>
+    </footer>
 </body>
 </html>
