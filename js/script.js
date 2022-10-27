@@ -21,6 +21,23 @@ class Store {
     }
     return bookInputs;
   }
+
+  static addBook(book) {
+    const bookInputs = Store.getBooks();
+    bookInputs.push(book);
+    localStorage.setItem('bookInputs', JSON.stringify(bookInputs));
+  }
+
+  static removeBook(del) {
+    const bookInputs = Store.getBooks();
+    bookInputs.forEach((book, index) => {
+      if (book.del === del) {
+        bookInputs.splice(index, 1);
+      }
+    });
+
+    localStorage.setItem('bookInputs', JSON.stringify(bookInputs));
+  }
 }
 
 // ==== Handle UI ====
@@ -66,6 +83,7 @@ document.querySelector('#add-button').addEventListener('click', (e) => {
 
     const books = new Book(title, author);
     page.bookList(books);
+    Store.addBook(books);
   }
   // to clear fields
   page.clearFields();
@@ -73,5 +91,6 @@ document.querySelector('#add-button').addEventListener('click', (e) => {
   // to remove a book
   document.querySelector('#book-collection').addEventListener('click', (e) => {
     page.deleteBook(e.target);
+    Store.removeBook();
   });
 });
