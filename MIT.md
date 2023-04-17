@@ -1,4 +1,4 @@
-## Copyright 2022, [YOUR NAME]
+## Copyright 2022, Ifeanyi Oti
 
 ###### Please delete this line and the next one
 ###### APP TYPE can be a webpage/website, a web app, a software and so on
